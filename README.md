@@ -1,4 +1,4 @@
-</a> <a hr<img width="512" height="512" alt="IMG_6440" src="https://github.com/user-attachments/assets/d025a372-f772-4e09-922a-9685c34fd5b4" />
+ <a hr<img width="512" height="512" alt="IMG_6440" src="https://github.com/user-attachments/assets/d025a372-f772-4e09-922a-9685c34fd5b4" />
 
 
 <h1 align="center">Mangrat AI Client</h1>
