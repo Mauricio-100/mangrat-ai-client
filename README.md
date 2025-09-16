@@ -1,6 +1,7 @@
 <p align="center">
-  <img src=<img width="512" height="512" alt="IMG_6440" src="https://github.com/user-attachments/assets/4e3de9e1-dae0-4880-bb15-7ce8eb29be8a // alt="Logo de Mangrat AI" width="150">
-</p>
+  <img src=<img width="512" height="512" alt="IMG_6440" src="https://github.com/user-attachments/assets/4e3de9e1-dae0-4880-bb15-7ce8eb29be8a" //
+
+
 
 <h1 align="center">Mangrat AI Client</h1>
 
