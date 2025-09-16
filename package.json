@@ -1,36 +1,17 @@
 {
   "name": "mangrat-ai-client",
-  "version": "1.4.4",
-  "description": "Un client SDK simple et flexible pour interagir avec les modèles IA de Google Gemini, optimisé pour le service Mangrat.",
+  "version": "1.4.5",
+  "description": "Un client SDK simple et flexible pour interagir avec les modèles IA de Google Gemini.",
   "main": "mangrat-ai.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"✔ No tests specified\" && exit 0"
-  },
+  "scripts": { "test": "echo \"✔ No tests specified\" && exit 0" },
   "author": "mauriciotukss2",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mauricio-100/mangrat-ai-client.git"
+  "repository": { "type": "git", "url": "git+https://github.com/Mauricio-100/mangrat-ai-client.git" },
+  "files": [ "mangrat-ai.js", "logo.png" ],
+  "engines": {
+    "node": ">=18.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/Mauricio-100/mangrat-ai-client/issues"
-  },
-  "homepage": "https://github.com/Mauricio-100/mangrat-ai-client#readme",
-  "files": [
-    "mangrat-ai.js",
-    "logo.png"
-  ],
-  "dependencies": {
-    "@google/generative-ai": "^0.12.0",
-    "mangrat-ai-client": "^1.4.4"
-  },
-  "keywords": [
-    "ai",
-    "gemini",
-    "sdk",
-    "mangrat",
-    "google",
-    "llm"
-  ]
+  "dependencies": { "@google/generative-ai": "^0.12.0" },
+  "keywords": [ "ai", "gemini", "sdk", "mangrat", "google", "llm" ]
 }
