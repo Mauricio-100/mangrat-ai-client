@@ -1,6 +1,6 @@
 {
   "name": "mangrat-ai-client",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Un client SDK simple et flexible pour interagir avec les modèles IA de Google Gemini, optimisé pour le service Mangrat.",
   "main": "mangrat-ai.js",
   "type": "module",
