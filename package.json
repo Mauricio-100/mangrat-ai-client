@@ -22,7 +22,8 @@
     "logo.png"
   ],
   "dependencies": {
-    "@google/generative-ai": "^0.12.0"
+    "@google/generative-ai": "^0.12.0",
+    "mangrat-ai-client": "^1.4.4"
   },
   "keywords": [
     "ai",
