@@ -1,4 +1,6 @@
-<img width="512" height="512" alt="IMG_6440" src="https://github.com/user-attachments/assets/d025a372-f772-4e09-922a-9685c34fd5b4" />
+<p align="center">
+  <img src="./assets/logo.png" alt="Mangrat AI Logo" width="150"/>
+</p>
 
 
 <h1 align="center">Mangrat AI Client</h1>
