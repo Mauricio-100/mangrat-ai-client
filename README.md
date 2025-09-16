@@ -61,8 +61,11 @@ async function main() {
 }
 
 main();
+/
+```
 
-API
+### API
+
 new MangratAI(config)
 Crée une nouvelle instance du client Mangrat AI.
  * config (objet) : L'objet de configuration.
@@ -72,8 +75,8 @@ client.chat(message)
 Envoie un message (prompt) au modèle Gemini et retourne sa réponse.
  * message (string, requis) : Le prompt à envoyer au modèle.
  * Retourne : Promise<string> - Une promesse qui se résout avec la réponse textuelle de l'IA.
-Contribuer
+### Contribuer
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue pour signaler un bug ou proposer une nouvelle fonctionnalité.
-Licence
+### Licence
 Ce projet est sous licence ISC.
 
