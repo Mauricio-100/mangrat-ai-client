@@ -1,54 +1,80 @@
-# Mangrat AI Client
+<p align="center">
+  <img src="https://i.imgur.com/5J3a2fS.png" alt="Logo de Mangrat AI" width="150">
+</p>
 
-[![npm version](https://badge.fury.io/js/mangrat-ai-client.svg)](https://badge.fury.io/js/mangrat-ai-client)
+<h1 align="center">Mangrat AI Client</h1>
 
-Un client SDK simple et lC)ger pour interagir avec des modC(les d'IA, optimisC) pour le service Mangrat V5 et propulsC) par Google Gemini.
+<p align="center">
+  <a href="https://www.npmjs.com/package/mangrat-ai-client"><img src="https://badge.fury.io/js/mangrat-ai-client.svg" alt="NPM Version"></a> <a href="https://github.com/Mauricio-100/mangrat-ai-client/actions/workflows/publish.yml"><img src="https://github.com/Mauricio-100/mangrat-ai-client/actions/workflows/publish.yml/badge.svg" alt="CI/CD Status"></a> <a href="https://www.npmjs.com/package/mangrat-ai-client"><img src="https://img.shields.io/npm/dm/mangrat-ai-client.svg" alt="NPM Downloads"></a> <a href="https://github.com/Mauricio-100/mangrat-ai-client/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License"></a>
+</p>
+
+Un SDK JavaScript simple et léger pour interagir avec les modèles d'IA Gemini de Google directement depuis votre application Node.js.
+
+---
+
+## Fonctionnalités
+
+* ✅ Interface simple et intuitive avec la méthode `chat()`.
+* ✅ Léger et sans dépendances inutiles.
+* ✅ Prise en charge de tous les modèles Gemini disponibles via l'API.
+* ✅ Modèle par défaut (`gemini-1.5-flash-latest`) pour un démarrage rapide.
+
+---
 
 ## Installation
 
-Installez le paquet en utilisant npm :
+Installez le package en utilisant npm :
 
 ```bash
 npm install mangrat-ai-client
 
 Utilisation
-D'abord, vous devez obtenir une clC) d'API gratuite depuis Google AI Studio. Ensuite, vous pouvez utiliser le client de cette maniC(re :
+Usage Simple
+Voici un exemple de base utilisant le modèle par défaut (gemini-1.5-flash-latest).
+const MangratAI = require('mangrat-ai-client');
 
-import MangratAI from 'mangrat-ai-client';
+async function main() {
+  // Initialisez le client avec votre clé API
+  const client = new MangratAI({
+    apiKey: 'VOTRE_CLE_API_GOOGLE_GEMINI'
+  });
 
-// 1. Configurez le client avec votre clC) d'API
-const client = new MangratAI({
-  apiKey: "VOTRE_CLE_API_GOOGLE_GEMINI"
-});
-
-// 2. CrC)ez une fonction asynchrone pour utiliser la mC)thode .chat()
-async function askAI() {
-  try {
-    console.log("Envoi d'un message C  l'IA...");
-    const reply = await client.chat("Quelle est la meilleure fonctionnalitC) de Node.js ?");
-    console.log("RC)ponse de l'IA:", reply);
-  } catch (error) {
-    console.error("Une erreur est survenue:", error.message);
-  }
+  // Envoyez un message et attendez la réponse
+  const reponse = await client.chat("Bonjour, qui es-tu ?");
+  console.log(reponse);
 }
 
-// 3. Appelez la fonction
-askAI();
+main();
 
-// 3. Appelez la fonction
-askAI();
-API de la BibliothC(que
+Usage Avancé (Choisir un modèle)
+Vous pouvez facilement spécifier un modèle différent, comme gemini-1.5-pro-latest, lors de l'initialisation du client.
+const MangratAI = require('mangrat-ai-client');
+
+async function main() {
+  // Spécifiez un modèle plus puissant lors de l'initialisation
+  const client = new MangratAI({
+    apiKey: 'VOTRE_CLE_API_GOOGLE_GEMINI',
+    modelName: 'gemini-1.5-pro-latest' // ou un autre modèle de votre choix
+  });
+
+  const reponse = await client.chat("Explique la relativité générale en termes simples.");
+  console.log(reponse);
+}
+
+main();
+
+API
 new MangratAI(config)
-CrC)e une nouvelle instance du client MangratAI.
-
-config (Object) : L'objet de configuration.
-apiKey (String) [Requis] : Votre clC) d'API Google Gemini.
-await client.chat(message)
-Envoie un message C  l'IA et retourne la rC)ponse.
-
-message (String) [Requis] : Le prompt ou la question que vous voulez envoyer C  l'IA.
-Retourne : Promise<string> - Une promesse qui se rC)sout avec la rC)ponse textuelle de l'IA.
-Auteur
-mauricioMagic (c) 2025
+Crée une nouvelle instance du client Mangrat AI.
+ * config (objet) : L'objet de configuration.
+   * apiKey (string, requis) : Votre clé API Google Gemini.
+   * modelName (string, optionnel) : Le nom du modèle à utiliser. La valeur par défaut est "gemini-1.5-flash-latest".
+client.chat(message)
+Envoie un message (prompt) au modèle Gemini et retourne sa réponse.
+ * message (string, requis) : Le prompt à envoyer au modèle.
+ * Retourne : Promise<string> - Une promesse qui se résout avec la réponse textuelle de l'IA.
+Contribuer
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue pour signaler un bug ou proposer une nouvelle fonctionnalité.
 Licence
-ISC
+Ce projet est sous licence ISC.
+
